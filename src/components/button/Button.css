@@ -1,0 +1,14 @@
+.button-container {
+    display: inline-block;
+    height: 29px;
+    vertical-align: bottom;
+    border: 1px solid darkgrey;
+    border-left: 0px;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.button {
+    vertical-align: middle;
+    color: cornflowerblue;
+}

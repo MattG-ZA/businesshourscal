@@ -1,0 +1,16 @@
+.output {
+    margin-top: 25px;
+}
+
+.output-container {
+    width: 50%;
+    display: inline-block;
+}
+
+.output-item {
+    display: block;
+}
+
+.output-header {
+    font-weight: bold;
+}
