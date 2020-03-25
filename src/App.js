@@ -4,6 +4,7 @@ import Input from './components/input/Input';
 import Output from './components/output/Output';
 import Button from './components/button/Button';
 import { CheckBusinessHours } from './services/Services';
+import config from './config/Config.json';
 
 class App extends Component {
   constructor(props) {
@@ -17,8 +18,9 @@ class App extends Component {
   }
 
   HandleSubmit = () => {
-    const currentInputValue = this.state.inputValue;
-    const inBusinessHours = CheckBusinessHours(currentInputValue);
+    // Handle blank inputs
+    const currentInputValue = this.state.inputValue.trim().length > 0 ? this.state.inputValue : '-';
+    const inBusinessHours = CheckBusinessHours(currentInputValue, config);
 
     this.setState({
       inputList: [...this.state.inputList, currentInputValue],
