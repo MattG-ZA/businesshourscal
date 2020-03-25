@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-// This function calls all relevant functions to get a output response
+// This function calls all relevant functions to get an output response
 export const CheckBusinessHours = (currentInputValue, config) => {
     const date = moment(new Date(currentInputValue));
     let inBusinessHours = false;
