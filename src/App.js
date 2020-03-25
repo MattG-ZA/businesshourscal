@@ -4,7 +4,7 @@ import Input from './components/input/Input';
 import Output from './components/output/Output';
 import Button from './components/button/Button';
 import { CheckBusinessHours } from './services/Services';
-import config from './config/Config.json';
+import config from './config/config.json';
 
 class App extends Component {
   constructor(props) {

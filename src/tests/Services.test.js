@@ -1,5 +1,5 @@
 import { CheckBusinessHours } from 'services/Services';
-import testConfig from './TestConfig.json';
+import testConfig from './testConfig.json';
 
 test('invalid date input returns false', () => {
     expect(CheckBusinessHours('not a date', testConfig)).toBe('false');
